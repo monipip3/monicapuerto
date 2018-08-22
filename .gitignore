@@ -106,7 +106,7 @@ venv.bak/
 
 
 
-manage.py
+#manage.py
 collection/
 	__init__.py
     admin.py
