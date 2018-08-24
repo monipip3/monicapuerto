@@ -1,0 +1,25 @@
+{%extends 'base.html' %}
+{% block title %}
+
+	About - {{ block.super }}
+{% endblock title %}
+
+
+{% load static %}
+
+
+{% block content %}
+	<h3> About Me</h3>
+	<img src="{% static		'images/aboutme.jpg' %}" alt = ""/>
+		<p> 
+			I have 5 years of marketing/digital strategy experience but recently I have been teaching myself / learning Python for Data Science and Django (I built this website myself!)
+			I recently completed <a href = "https://generalassemb.ly/education/data-science">General Assembly's Data Science Immersive Program </a> 
+		<br> 
+			I am a volunteer teacher for <a href = "https://www.womenwhocode.com/dc">Women Who Code DC Chapter </a> and <a href = "https://hearmecode.com/">Women Hear Me Code </a>.
+		<br>
+			I currently work for a startup in the DC area called Upside Travel, where I use NLP to analyze customer feedback, use Looker and Matplotlib to visualize data. I also use SQL to extract data and Python to transform it.
+		<br>
+			I am also a volunteer for <a href="https://resist.bot/">Resistbot</a> where I use my Python skills and also submit to local news websites via Letters to the Editor on behalf of user submissions. 
+		 </p>
+{% endblock content %}
+
