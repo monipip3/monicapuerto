@@ -103,20 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-
-
-
-manage.py
-collection/
-	__init__.py
-    admin.py
-    models.py
-    tests.py
-    views.py
-monica-django/
-    __init__.py
-    settings.py
-     urls.py
-     wsgi.py
-webapp/
-semantic/
+# MacOS
+.DS_Store
