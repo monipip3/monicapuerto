@@ -11,10 +11,10 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "monica-django.settings")
 
 from django.core.wsgi import get_wsgi_application
-#from whitenoise.django import DjangoWhiteNoise
+from whitenoise.django import DjangoWhiteNoise
 
 #Excerpt From: Tracy Osborn. “Hello Web App.” iBooks. 
 #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "monicapuerto.settings")
 
 application = get_wsgi_application()
-#application = DjangoWhiteNoise(application)
+application = DjangoWhiteNoise(application)
