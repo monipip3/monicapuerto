@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'monica-django.urls'
+ROOT_URLCONF = 'monica_django.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'monica-django.wsgi.application'
+WSGI_APPLICATION = 'monica_django.wsgi.application'
 
 
 # Database
