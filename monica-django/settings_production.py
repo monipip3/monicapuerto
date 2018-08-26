@@ -1,6 +1,6 @@
 #inherit the standard settings file for defaults
 
-from monicapuert.settings import *
+from monicapuerto.settings import *
 
 
 #Everything below will override our standard settings:
