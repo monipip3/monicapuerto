@@ -1,6 +1,6 @@
 #inherit the standard settings file for defaults
 
-from monica-django.settings import *
+from monica_django.settings import *
 
 
 #Everything below will override our standard settings:
