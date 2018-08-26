@@ -1,4 +1,4 @@
 
 
-web: waitress-serve --port=$PORT monica-django.wsgi:application
+web: waitress-serve --port=$PORT monica_django.wsgi:application
 
