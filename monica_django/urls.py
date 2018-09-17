@@ -16,12 +16,13 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path
-from django.views.generic import TemplateView, RedirectView
-
+from django.views.generic import TemplateView
+from django.conf.urls import url
 from collection import views
-
+#from . import views
 
 urlpatterns = [
+    #url(r'^$',views.index,name='home'),
 	path('', views.index,name='home'),
 	#the new url entries
 	path('about/',TemplateView.as_view(template_name='about.html'), name = 'about'),
