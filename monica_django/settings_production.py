@@ -24,7 +24,7 @@ ALLOWED_HOSTS = ['*']
 
 #Set debug to false
 
-DEBUG = False 
+DEBUG = True 
 
 #static asset configuration
 
