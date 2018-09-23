@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Monica Puerto</title>
+    <title>Monica Puerto - Mapping Activism - Home </title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -41,9 +41,9 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'about'%}">About</a>
             </li>
-            <li class="nav-item">
+          <!--   <li class="nav-item">
               <a class="nav-link" href="post.html">Blog</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="{% url 'contact' %}">Contact</a>
             </li>
@@ -53,13 +53,13 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image:url('img/home-bg.jpg')">
+    <header class="masthead" style="background-image: url({% static 'img/home2.jpg' %})">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
+              <h1>Welcome to my Website!</h1>
               <span class="subheading">Mapping out Activism</span>
             </div>
           </div>
@@ -141,7 +141,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://twitter.com/monipip3">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -149,15 +149,15 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://medium.com/@monipip3">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://github.com/monipip3">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
