@@ -27,6 +27,7 @@ urlpatterns = [
 	#the new url entries
 	path('about/',TemplateView.as_view(template_name='about.html'), name = 'about'),
 	path('contact/',TemplateView.as_view(template_name='contact.html'),name='contact'),
+    path('homicides-in-dc/',TemplateView.as_view(template_name='post.html'),name='post1'),
     path('admin/', admin.site.urls),
 ]
 
