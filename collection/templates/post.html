@@ -76,7 +76,9 @@
               <h1>Homicides in District of Columbia increase in 2018</h1>
               <span class="meta">Posted
                 <!-- <a href="#">Start Bootstrap</a> -->
-                on September 25, 2018</span>
+                on September 25, 2018</span> <span class="meta">Updated
+                <!-- <a href="#">Start Bootstrap</a> -->
+                on Octovber 2, 2018</span>
             </div>
           </div>
         </div>
@@ -100,6 +102,46 @@
         <p> Note that you can access the legend via the arrows in the left hand corner. The dots are homicides incidents color coded by year, with 2018 labeled in red and 2017 labeled in black. The Wards' blue scale gradient is based of unemployment rate with Ward 8 having the highest unemployment rate. <p>
 
         <p>It is no suprise that areas with high unemployment rate and go hand in hand with crime. Ward 8 has a median household income of $30K and an unemployment rate of 22.9 which is almost 6x higher than the national average unemployment rate of 3.9. There is a vast difference when we compare to Ward 3 and 2 which have a lower unemployment rate than the national average and enjoy a median household income over $100K. </p>
+
+        <p>I wanted to dig into the data more and see what other findings I could find from the same datasets that fed my map above.
+
+        The preferred methods of Homicides in DC is by gun; which is not suprising with the gun regulation in our country, which is a whole other post. There is also an increase with gun homicides year to date versus the other methods compared to 2017. Who knows if it's easier access to guns or more people who have guns are getting involved with crime, or people are shooting more frequently. 
+          <br>
+        <img src="{% static 'img/Homicide_Methods.png' %}" alt="Smiley face" height="400" width="600">
+        <br>
+        When we see the homicides by year and by ward; we see the similar increase from the last graph isolated in Ward 8. Most of the increased homicide occured in Ward 8, while Ward 5 & 7 decreased. Did crime activity from those wards move towards Ward 8 since they are the closest areas with the most crime after Ward 8? In the third graph, we see homicides by method, ward, and year ; 2018 in Ward 8 via guns is the highest bar in this graph almost reaching 50 incidents whereas in 2017 it was a little over 30. That means gun homicides in Ward 8 almost doubled and in 2018 we are seeing a little over 5 homicides per month there with guns alone....
+
+        <img src="{% static 'img/Homicide_WARDS.png' %}" alt="Smiley face" height="400" width="600">
+
+         <img src="{% static 'img/Homicide_Methods_WARDS.png' %}" alt="Smiley face" height="400" width="600">
+        <br>
+        <br>
+
+         The last data point I wanted to analyze involved merging the Ward dataset which has census information with the homicide incidents. I used <a href="https://seaborn.pydata.org/examples/many_pairwise_correlations.html">seaborn's correlation matrix with a heatmap </a>  to visualize relationships between data points. I aggregated the counts of homicides per ward per year and appended it to the Ward data set in order to get the correlation between the census data and homicide incidents. Homicide frequency is the last row in the correlation matrix below. Things that stood out to me:
+
+         <ul>
+           <li>Homicide's have a high positive correlation with unemployment rate at .87 (the max correlation you can have is 1). This is to say as unemployment rate increases so does homicides.</li>
+
+           <li>Homicide's have a high positive correlation with percent below poverty at .97. This is to say as poverty rate increases so does homicides. So Wards with low poverty also have low unemployment rates like Wards 2,3,4, and 6 see little to no crime. Which is why one of the reasons Wendy's homicide made the headlines; because it was shocking to hear homicides in that area. Whereas homicides in Ward 8 and 7 are more frequent but don't make the headline news.</li>
+
+            <li> Some correlations that are high and negative; which means as one increases the other decreases are population over 25 who graduate and median house hold income. As the percentage of people who live in an area receive and finish their education; homicides decrease. Also as household income increases, homicides decrease. </li>
+         </ul>
+
+         <img src="{% static 'img/CORR.png' %}" alt="Smiley face" height="800" width="900">
+         <br>
+         <br>
+
+         Now that you armed with all this information please take a second to share this information with others. Feel free to share this also via the twitter share button above to @MayorBowser. 
+         <br>
+         We need to do better as a community because it clearly can affect all of us and secondly, we don't choose what families we are born into. Families who are surrounded by poverty, high unemployment rates, and low graduation rates typically have low income levels and resort to crime. All Wards should have access to the resources and opportunities that they need. Humanity should transcend over Ward lines. 
+
+         <br>
+         <br>
+
+        
+          <a href="https://github.com/monipip3/activism/blob/master/DC_Homicides/DC%20Homicides.ipynb"> To see the work done in this article please visit my Github where the datasets and <u>Jupyter notebook</u> resides. This work was 100% done by me. </a>
+
+         </p>
 
             
           </div>
