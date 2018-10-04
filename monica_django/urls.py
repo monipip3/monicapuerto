@@ -28,7 +28,7 @@ urlpatterns = [
 	path('about/',TemplateView.as_view(template_name='about.html'), name = 'about'),
 	path('contact/',TemplateView.as_view(template_name='contact.html'),name='contact'),
     path('homicides-in-dc/',TemplateView.as_view(template_name='post.html'),name='post1'),
-    path('mail/contact_me.php/',TemplateView.as_view(template_name='contact_me.php'),name='contact_form'),
+    path('contact/mail/contact_me.php/',TemplateView.as_view(template_name='contact_me.php'),name='contact_form'),
     path('admin/', admin.site.urls),
 ]
 
