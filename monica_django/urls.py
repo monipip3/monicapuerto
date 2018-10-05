@@ -19,18 +19,18 @@ from django.urls import include, path
 from django.views.generic import TemplateView
 from django.conf.urls import url
 from collection import views
-#from . import views
+# from . import views
 
 urlpatterns = [
-    #url(r'^$',views.index,name='home'),
-	path('', views.index,name='home'),
-	#the new url entries
-	path('about/',TemplateView.as_view(template_name='about.html'), name = 'about'),
-	path('contact/',TemplateView.as_view(template_name='contact.html'),name='contact'),
-    path('homicides-in-dc/',TemplateView.as_view(template_name='post.html'),name='post1'),
-    path('contact-form',TemplateView.as_view(template_name='contact_me.php'),name='contact_form'),
+    # url(r'^$',views.index,name='home'),
+    path('', views.index, name='home'),
+    # the new url entries
+    path('about/', TemplateView.as_view(template_name='about.html'), name='about'),
+    path('contact/', TemplateView.as_view(template_name='contact.html'), name='contact'),
+
+    # kind of a hack... but we want to use the built-in contact js for this bootstrap template
+    path('contact/contact-form', views.contact_form, name='contact-form'),
+
+    path('homicides-in-dc/', TemplateView.as_view(template_name='post.html'), name='post1'),
     path('admin/', admin.site.urls),
 ]
-
-
-
