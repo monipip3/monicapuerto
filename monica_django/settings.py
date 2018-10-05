@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
 	'collection', #this is the app we added
+    'mail',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
