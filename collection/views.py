@@ -64,7 +64,8 @@ def contact_form(request):
     :return: JsonResponse with status
     """
     status = HTTP_400_BAD_REQUEST
-    if request.method == HTTP_POST and request.is_ajax():
+    is_ajax = request.headers.get('X-Requested-With') == 'XMLHttpRequest'
+    if request.method == HTTP_POST and is_ajax:
         form = ContactForm(request.POST)
         if form.is_valid():
             try:
